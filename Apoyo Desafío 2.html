@@ -79,7 +79,12 @@ for (let i = 0; i < dental.length; i++){
     }
 }
 //6. Filtrar aquellos pacientes que indican ser de FONASA
-document.write(`<h2>Pacientes Dental Isapre</h2>`)
+document.write(`<h2>Pacientes Traumatología Fonasa</h2>`)
+for (let i = 0; i < traumatologia.length; i++){
+    if (traumatologia[i].prevision=="FONASA") {
+        document.write(`<p>${traumatologia[i].paciente} - ${traumatologia[i].prevision}</p>`)
+    }
+}
 
 //Agregar código para el desafio 2 aquí
 
